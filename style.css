@@ -23,4 +23,26 @@ body {
 
 .flex-container {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+  .flex-item {
+    text-align: center;
+    padding: 1em;
+    flex: 0 33%;
+  }
+
+  .project-image {
+      height: auto;
+      width: 300px;
   }
