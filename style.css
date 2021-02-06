@@ -2,13 +2,38 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
+    text-align: center; 
+    font-family:sans-serif; 
+    font-weight: lighter;
 }
+
+h1 {
+    text-align: inherit; 
+    font-family: inherit; 
+    font-weight: inherit;
+}
+
+h2 {
+    text-align: inherit; 
+    font-family: inherit; 
+    font-weight: inherit;
+}
+
 
 .container1 {
     position: relative;
     padding-top: 15%;
     padding-bottom:20%;
     text-align: center;
+}
+
+.container1 h1 {
+    font-size: 70px;
+}
+
+.container2 h1, .container3 h1, .container4 h1 {
+    font-size: 50px;
+    margin: 1em;
 }
 
 .container2, .container3, .container4 {
@@ -27,7 +52,6 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
   }
-
   
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
@@ -40,9 +64,32 @@ body {
     text-align: center;
     padding: 1em;
     flex: 0 33%;
+    margin-bottom: -2em;
   }
 
   .project-image {
       height: auto;
       width: 300px;
   }
+
+  .uni-image {
+      height: 150px;
+      width: auto;
+      margin-bottom: -2em;
+  }
+
+  .btn {
+    border-radius:4px;
+    background-color:lightblue;
+    text-decoration:none;
+    font-size:20px;
+    padding: 5px 25px 5px 25px;
+    color:black;
+    cursor:pointer;
+}
+
+.divider{
+    width:50px;
+    height:auto;
+    display:inline-block;
+}
