@@ -63,8 +63,8 @@ h2 {
   }
 
   .project-image {
-      height: auto;
-      width: 22.5rem;
+      height: 300px;
+      /* width: 22.5rem; */
   }
 
   .uni-image {
